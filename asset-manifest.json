@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/address-form/static/css/main.6cec7cb6.chunk.css",
-    "main.js": "/address-form/static/js/main.84988fc2.chunk.js",
-    "main.js.map": "/address-form/static/js/main.84988fc2.chunk.js.map",
+    "main.css": "/address-form/static/css/main.b5a1641d.chunk.css",
+    "main.js": "/address-form/static/js/main.73bf0766.chunk.js",
+    "main.js.map": "/address-form/static/js/main.73bf0766.chunk.js.map",
     "runtime-main.js": "/address-form/static/js/runtime-main.fb21888c.js",
     "runtime-main.js.map": "/address-form/static/js/runtime-main.fb21888c.js.map",
-    "static/js/2.f4fa5503.chunk.js": "/address-form/static/js/2.f4fa5503.chunk.js",
-    "static/js/2.f4fa5503.chunk.js.map": "/address-form/static/js/2.f4fa5503.chunk.js.map",
+    "static/js/2.05540072.chunk.js": "/address-form/static/js/2.05540072.chunk.js",
+    "static/js/2.05540072.chunk.js.map": "/address-form/static/js/2.05540072.chunk.js.map",
     "index.html": "/address-form/index.html",
-    "static/css/main.6cec7cb6.chunk.css.map": "/address-form/static/css/main.6cec7cb6.chunk.css.map",
-    "static/js/2.f4fa5503.chunk.js.LICENSE.txt": "/address-form/static/js/2.f4fa5503.chunk.js.LICENSE.txt"
+    "static/css/main.b5a1641d.chunk.css.map": "/address-form/static/css/main.b5a1641d.chunk.css.map",
+    "static/js/2.05540072.chunk.js.LICENSE.txt": "/address-form/static/js/2.05540072.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.fb21888c.js",
-    "static/js/2.f4fa5503.chunk.js",
-    "static/css/main.6cec7cb6.chunk.css",
-    "static/js/main.84988fc2.chunk.js"
+    "static/js/2.05540072.chunk.js",
+    "static/css/main.b5a1641d.chunk.css",
+    "static/js/main.73bf0766.chunk.js"
   ]
 }
