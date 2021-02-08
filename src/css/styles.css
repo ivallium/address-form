@@ -1,0 +1,141 @@
+.background {
+    background: linear-gradient(to right, #6d087c , #ff0174);
+    height: 100vh;
+}
+
+.horizontal-bar {
+    border: solid 2px rgba(255,255,255,0.3);
+    margin: 15px 5px
+}
+
+.search-container {
+    margin-left: 33%;
+    margin-right: 33%;
+    display: block;
+    text-align: center;
+}
+
+h3 {
+    color: white;
+    text-align: center;
+    padding-bottom: 10px;
+    margin: 0px;
+}
+
+p  {
+    color: white;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+
+.double-chevron {
+    height: 12px;
+    padding: 2px;
+}
+
+.postcode-input-div { 
+    position: relative;
+    width: 100%;
+ }
+
+.form-input {
+    border: solid 1px white;
+    background: transparent; 
+    background-color:rgba(0, 0, 0, 0);
+    color: white;
+    height: 30px;
+    padding: 3px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.time-select-div > div {
+    width: 100%
+}
+
+.form-input input { 
+    border: none; 
+    background: transparent; 
+    color: white; 
+    width: 100%; 
+}
+
+.form-input input:focus { outline: none; }
+
+select {
+    background: transparent;
+    color: white;
+    border: none;
+    -webkit-appearance: none;
+    width: 100%;
+    text-align-last: center;
+}
+select:focus {
+    outline: none;
+}
+
+.time-select-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+label {
+    display: flex;
+    font-size: 10px;
+    color: white;
+    margin-left: 5px;
+    padding: 5px 0px;
+}
+
+input:-internal-autofill-selected {
+    background-color: transparent;
+    background: transparent;
+}
+
+.submit-div {
+    padding: 20px;
+}
+
+#submit-button {
+    padding: 5px;
+    width: 80%;
+    height: 40px;
+    border-radius: 30px;
+    border: solid 1px deeppink;
+    color: deeppink;
+}
+
+.address-display {
+    background: rgba(0,0,0, 0.1);
+    margin: 5px;
+    border: solid 1px white;
+    padding: 5px 0px 5px 0px;
+}
+
+.address-display > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.address-display > div > p {
+    font-size: 12px;
+    padding-left: 5px;
+    margin: 5px;
+    text-align: left;
+}
+.address-display > p {
+    font-size: 12px;
+    text-align: left;
+    padding-left: 10px;
+    margin: 5px;
+}
+
+.address-display img {
+    padding-right: 5px;
+}
