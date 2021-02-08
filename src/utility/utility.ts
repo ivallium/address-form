@@ -24,6 +24,7 @@ export function checkPostCode (toCheck: string | undefined) {
     pcexp.push (new RegExp ("^(" + alpha1 + "{1}[0-9]{1}" + alpha3 + "{1})(\\s*)([0-9]{1}" + alpha5 + "{2})$","i"));
   
     // Expression for postcodes: AANA  NAA
+    // eslint-disable-next-line
     pcexp.push (new RegExp ("^(" + alpha1 + "{1}" + alpha2 + "{1}" + "?[0-9]{1}" + alpha4 +"{1})(\\s*)([0-9]{1}" + alpha5 + "{2})$","i"));
     
     // Exception for the special postcode GIR 0AA

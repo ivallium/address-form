@@ -5,6 +5,8 @@ import AddressSelect from './address/AddressSelect';
 import PostcodeInput from './address/postcode/PostcodeInput';
 import TimeSelect from './time/TimeSelect';
 
+// Form component which contains all the inputs/fields 
+// Styling can all be found in /css/styles
 function Form() {
 
     const [postcode, setPostcode] = useState<string | undefined>(undefined);
@@ -16,6 +18,7 @@ function Form() {
         setPostcode("");
     }, [addresses])
 
+    // Takes the address input and creates an entry in the addresses array
     const handleAddAddress = (firstLine: string, secondLine: string, city: string, postcode: string) => {
         setAddresses([...addresses, { address: { firstLine, secondLine, city, postcode }, time: { years, months } }]);
         setPostcode("");
@@ -38,12 +41,16 @@ function Form() {
                 <div>
                     {
                         addresses.map((entry: AddressEntry, index: number) => {
-                            return <AddressDisplay address={entry.address} time={entry.time} onRemove={() => handleRemoveAddress(index)}/>
+                            return (<AddressDisplay
+                                        address={entry.address} 
+                                        time={entry.time} 
+                                        onRemove={() => handleRemoveAddress(index)}
+                                    />);
                         })
                     }
                 </div>
                 
-
+                
                 <TimeSelect 
                     year={years} 
                     month={months}

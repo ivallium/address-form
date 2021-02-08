@@ -1,15 +1,18 @@
 import React, { ChangeEvent, useEffect, useState } from 'react';
 import { API_KEY } from '../../constants';
+import { AddressSelectProps } from '../../types/types';
 import { formatAddress } from '../../utility/utility';
 import AddressInput from './AddressInput';
 
-function AddressSelect(props: { postcode: string, addAddress: (firstLine: string, secondLine: string, city: string, postcode: string) => void }) {
+// Takes in the postcode as props and immediately searches for the results using fetch
+// Fetch is in useEffect so that whenever the post code is updated the search completes again
+
+// Only displays the fields for the address if an address has been selected
+function AddressSelect(props: AddressSelectProps) {
 
     const [addressOptions, setAddressOptions] = useState([]);
     const [selected, setSelected] = useState("-1");
     const [error, setError] = useState<null | string>(null);
-
-    
 
     useEffect(() => {
         async function updateComponent() {
@@ -29,7 +32,7 @@ function AddressSelect(props: { postcode: string, addAddress: (firstLine: string
 
     return (
         <>
-            <label>Address</label>
+            <label>{"Address"}</label>
             
             <div className="form-input">
                 <select name="address" id="address" placeholder="Select your address" value={selected} onChange={(event: ChangeEvent<HTMLSelectElement>) => setSelected(event.target.value)}>
@@ -38,17 +41,20 @@ function AddressSelect(props: { postcode: string, addAddress: (firstLine: string
                         <option key={`option-${index}`} value={address}>{address.replace(/ ,/g, "")}</option>
                     ))}
                 </select>
-                <img width={15} alt={"chevron-down"} src="/assets/chevron-down.png"/>
+                <img width={15} alt={"chevron-down"} src="./assets/chevron-down.png"/>
             </div>
 
-            <img className="double-chev" alt={"double-chevron"} width={8} src={"/assets/double-chevron.png"}/>
 
             { selected !== "-1" && 
-                <AddressInput 
-                    address={formatAddress(selected)} 
-                    postcode={props.postcode} 
-                    addAddress={props.addAddress}
-                />
+                <>
+                    <img className="double-chev" alt={"double-chevron"} width={8} src={"./assets/double-chevron.png"}/>
+
+                    <AddressInput 
+                        address={formatAddress(selected)} 
+                        postcode={props.postcode} 
+                        addAddress={props.addAddress}
+                    />
+                </>
             }
 
             { error !== "" && <p>{error}</p>}

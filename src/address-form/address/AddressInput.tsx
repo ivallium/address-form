@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
+import { AddressInputProps } from '../../types/types';
 
-function AddressInput(props: { address: any, postcode: string, addAddress: (firstLine: string, secondLine: string, city: string, postcode: string) => void }) {
+function AddressInput(props: AddressInputProps) {
 
     const [firstLine, setFirstLine] = useState(props.address.firstLine);
     const [secondLine, setSecondLine] = useState(props.address.secondLine);
