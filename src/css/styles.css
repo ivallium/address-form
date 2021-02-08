@@ -12,7 +12,8 @@
 
 .horizontal-bar {
     border: solid 2px rgba(255,255,255,0.3);
-    margin: 15px 5px
+    margin: 15px 5px;
+    border-radius: 20px;
 }
 
 .form-input {
